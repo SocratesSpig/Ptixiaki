@@ -19,7 +19,7 @@ public class EnemyHealth : MonoBehaviour
     bool isSinking;
 
 
-
+    //easy
 
     void Awake()
     {
