@@ -19,9 +19,6 @@ public class EnemyHealth : MonoBehaviour
     bool isSinking;
 
 
-    //easy
-    //dummy comment
-
     void Awake()
     {
         anim = GetComponent<Animator>();
