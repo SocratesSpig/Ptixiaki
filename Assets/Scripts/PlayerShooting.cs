@@ -105,7 +105,7 @@ public class PlayerShooting : MonoBehaviour {
             gunLine.SetPosition(1, shootHit.point);
 
             Instantiate(impactEffect, shootHit.point, Quaternion.LookRotation(shootHit.normal));
-            Debug.Log("zeds");
+            //Debug.Log("zeds");
 
         }
 
@@ -117,14 +117,14 @@ public class PlayerShooting : MonoBehaviour {
                 gunLine.SetPosition(1, shootHit.point);
 
                 Instantiate(impactEffect1, shootHit.point, Quaternion.LookRotation(shootHit.normal));
-                Debug.Log("walls");
+                //Debug.Log("walls");
             }
 
 
             else
             {
                 gunLine.SetPosition(1, shootRay.origin + shootRay.direction * range);
-                Debug.Log("else");
+                //Debug.Log("else");
 
             }
         }

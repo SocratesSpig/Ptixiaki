@@ -19,17 +19,18 @@ public class ReloadManager : MonoBehaviour {
 
     void Update()
     {
+        if (reloading.isReloading == false)
+        {
+            anim.ResetTrigger("IsReloading");
+            Debug.Log("NOPE...");
+        }
+
         if (reloading.isReloading == true)
         {
             anim.SetTrigger("IsReloading");
             RestartTimer += Time.deltaTime;
-
-            if (RestartTimer >= nextReload)
-            {
-                anim.ResetTrigger("IsReloading");
-
-            }
-
+            Debug.Log("Reloading...");           
         }
+
     }
 }
